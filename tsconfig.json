@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "target": "es2015",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "noImplicitAny": false,
+        "noEmitOnError": true,
+        "removeComments": true,
+        "strictNullChecks": true,
+        "allowJs": false,
+        "noImplicitThis": true,
+        "allowUnreachableCode": false,
+        "sourceMap": true,
+        "preserveConstEnums": true
+    },
+
+    "exclude": [
+        "node_modules",
+        "./development/server"
+    ],
+    
+    "typeRoots": [ "./node_modules/deepstream.io-client.js/src/client.d.ts" ]
+}
+
+// "noUnusedLocals": true,
+// "noUnusedParameters": true

@@ -1,0 +1,120 @@
+{
+	"rules": {
+		// Code verification
+		"no-unused-expression": true,
+		"no-duplicate-variable": true,
+		"no-duplicate-super": true,
+		"no-unused-variable": true,
+		"semicolon": [true, "always"],
+		"triple-equals": true,
+		"no-eval": true,
+		"no-empty": true,
+		"no-floating-promises": true,
+		"no-invalid-this": true,
+		"no-inferred-empty-object-type": true,
+		"no-misused-new": true,
+		"no-null-keyword": true,
+		"no-string-throw": true,
+		"no-shadowed-variable": true,
+		"no-switch-case-fall-through": true,
+		"no-unused-new": true,
+		"no-unbound-method": true,
+		"no-unsafe-finally": true,
+		"no-unsafe-any": true,
+		"no-var-keyword": true,
+		"no-use-before-declare": true, 	// Especially useful for var, which is disabled: redundant?
+		"no-void-expression": true, 	// Test
+		"restrict-plus-operands": true,
+		"strict-boolean-expressions": true,
+		"strict-type-predicates": true,
+		"switch-default": true,
+		"typedef": [	//Check https://palantir.github.io/tslint/rules/typedef/
+			true
+		],
+		"typeof-compare": true,
+		"use-isnan": true,
+		"adjacent-overload-signatures": true,
+		"no-reference": true,
+		"no-var-requires": true,
+		"no-import-side-effect": true,
+		"no-inferrable-types": [true],	// Explicit types where they can be easily inferred by the compiler make code more verbose
+		"no-internal-module": true,
+		"no-non-null-assertion": true,
+		"only-arrow-functions": [true, "allow-declarations"], // "allow-named-functions"
+		"prefer-for-of": true,
+		"typedef-whitespace": [
+			true,
+			{
+				"call-signature": "nospace",
+				"index-signature": "nospace",
+				"parameter": "nospace",
+				"property-declaration": "nospace",
+				"variable-declaration": "nospace"
+			},
+			{
+				"call-signature": "nospace",
+				"index-signature": "nospace",
+				"parameter": "nospace",
+				"property-declaration": "nospace",
+				"variable-declaration": "nospace"
+			}
+		],
+		"unified-signatures": true,
+		"await-promise": true,
+		"no-construct": true,
+		"no-string-literal": true, 			// Test
+		"cyclomatic-complexity": [true],	// Default acceptable complexity
+		"eofline": true,
+		"indent": [true, "tabs"],
+		"array-type": [true, "array"],
+		
+		// Maintain code style
+		"class-name": true,
+		"trailing-comma": [true, {"multiline": "never", "singleline": "never"}],
+		"linebreak-style": [true, "CRLF"],
+		"no-default-export": true,
+		"no-mergeable-namespace": true,
+		"no-require-imports": true,
+		"object-literal-sort-keys": true,
+		"arrow-return-shorthand": true,	// True "multiline"
+		"arrow-parens": [true, "ban-single-arg-parens"],
+		"comment-format": [true, "check-space"],
+		"completed-docs": [true], // Check https://palantir.github.io/tslint/rules/completed-docs/
+		"import-spacing": true,
+		"interface-name": [true, "always-prefix"],
+		"interface-over-type-literal": true,
+		"jsdoc-format": true,
+		"newline-before-return": true,
+		"new-parens": true,
+		"match-default-export-name": true,
+		"no-boolean-literal-compare": true,
+		"no-angle-bracket-type-assertion": false,
+		"no-consecutive-blank-lines": [true, 4],
+		"no-parameter-properties": true, // less verbose in a bad way imo
+		// "no-trailing-whitespace": [true, "ignore-jsdoc"], // not working as intended (report bug)
+		"no-unnecessary-initializer": true,
+		"no-unnecessary-qualifier": true,
+		"object-literal-key-quotes": [true, "as-needed"],
+		"object-literal-shorthand": true,
+		"one-variable-per-declaration": [true],
+		"ordered-imports": [true, {"import-sources-order": "lowercase-last", "named-imports-order": "lowercase-first"}],
+		"prefer-method-signature": true,
+		"space-before-function-paren": false,
+		"variable-name": [true, "check-format", "allow-leading-underscore"],
+		"whitespace": [
+			true, 
+			"check-branch", 
+			"check-decl", 
+			"check-module", 
+			"check-typecast", 
+			"check-operator"
+		],
+		"align": [
+			true,  
+			"parameters", 
+			"statements"
+			// "arguments"
+		]
+		
+	}
+}
